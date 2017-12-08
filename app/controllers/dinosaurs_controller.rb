@@ -8,8 +8,8 @@ def show
    end
 
    def new
-  @dinosaur = Dinosaur.new
-end
+     @dinosaur = Dinosaur.new
+   end
 
 
 def create
