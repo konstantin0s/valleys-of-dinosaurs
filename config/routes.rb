@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  root "dinosaurs#index"
+  root 'dinosaurs#index'
 
+  get 'dinosaurs' => 'dinosaur#index'
+  get 'dinosaurs/new' => "dinosaurs#new", as: :new_dinosaur
+  get 'dinosaurs/:id' => 'dinosaurs#show', as: :dinosaur
 
-
-get "dinosaurs" => "dinosaurs#index"
+  post "dinosaurs" => "dinosaurs#create"
 end
