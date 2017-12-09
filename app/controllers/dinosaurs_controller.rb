@@ -58,13 +58,13 @@ end
 
 
 
-  private
-
-   def dinosaur_params
-     params.require(:dinosaur).permit(:name, :age, :image_url)
-   end
 
 
+   private
+
+     def dinosaur_params
+       params.require(:dinosaur).permit(:name, :age, :image_url, :valley_id)
+     end
 
 
 
